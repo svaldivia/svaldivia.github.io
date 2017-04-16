@@ -1,0 +1,61 @@
+//------------------------------
+// GRID SETTINGS
+//------------------------------
+
+// $sv-base-grid: (
+//     gutter: 1rem,
+//     media: 1440px,
+// );
+
+.grid {
+    @include grid-container;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} { @include grid-column($i); }
+}
+
+.full-height {
+    height: 100%;
+}
+
+.main-header {
+    color: $gray-3;
+    height: 100vh;
+    background-image: url('/assets/images/personal_landing_background.jpg');
+    background-attachment: fixed;
+
+    h2 { color: $gray-2; }
+
+    .hero-text {
+        padding-top: 35vh;
+    }
+}
+
+//------------------------------
+// Box Model
+//------------------------------
+
+.mg {
+    margin: 1rem;
+
+    .mg-top {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.mg-none { margin:0; }
+
+.pd {
+    margin: 1rem;
+
+    .pd-top {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.pd-none { margin:0; }

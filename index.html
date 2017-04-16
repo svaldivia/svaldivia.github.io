@@ -1,8 +1,29 @@
 ---
-layout: default
+layout: test
 ---
 
-<div class="home">
+<header class="grid main-header">
+    <div class="hero-text text-align-center">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h2>Developer. Designer. Creator</h2>
+    </div>
+</header>
 
-  <h1 class="page-heading">Page Under Construction</h1>
-</div>
+<main>
+    <section class="section-grid pd pd-top">
+        <div class="section-img">
+            <img src="{{ site.url }}assets/images/portrait.jpg" alt="Sebastian Valdivia" >
+        </div>
+        <h2 class="section-title text-align-center mg-none">About Me</h2>
+        <div class="section-content">
+            <p>
+                I am enthusiastic developer with a passion for web, mobile and video game development. I love to learn new technologies and collaborate with other professionals to make amazing products.
+                In addition, I am currently designing and developing a Unity game for iOS that I plan to release in the future. When I am not in front of the computer, I play the drums, ski and draw.
+            </p>
+            <div class="icon-button">
+                <a href="https://github.com/svaldivia" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/sebastian-valdivia" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+</main>

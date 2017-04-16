@@ -1,0 +1,61 @@
+//------------------------------
+// COLOR PALETTE
+//------------------------------
+
+$black:     #171414;
+$gray-1:    #7F7C7C;
+$gray-2:    #CCC7C7;
+$gray-3:    #FFF9F8;
+$red:       #FF2E19;
+
+//------------------------------
+// BASE ELEMENTS
+//------------------------------
+
+$nav-grid: (
+    columns: 3,
+    gutter: 1rem
+);
+$nav-buttons-grid: (
+    columns: 4,
+    direction: "right",
+    gutter: 1rem
+);
+
+nav {
+    @include grid-container($nav-grid);
+    background: $black;
+    color: $gray-3;
+    position: fixed;
+    width: 100%;
+    max-height: 54px;
+
+    .home {
+        @include grid-column(1, $nav-grid);
+        padding: 8px 0;
+
+        .emoji:hover {
+            font-size: 1.5rem;
+            transition: font-size 0.5s ease-out;
+        }
+    }
+
+    .nav-button-group {
+        @include grid-column(1, $nav-grid);
+        @include grid-push(1, $nav-grid);
+    }
+
+    .nav-button {
+        padding: 15px 0;
+    }
+}
+
+
+
+//------------------------------
+// HELPER CLASSES
+//------------------------------
+
+.element-shadow {
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.88);
+}

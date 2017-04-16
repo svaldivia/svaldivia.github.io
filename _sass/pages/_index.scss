@@ -1,0 +1,41 @@
+.icon-button {
+    font-size: 3rem;
+    text-align: center;
+
+    a { color: black; }
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-template-areas:
+    "img header"
+    "img content";
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "img"
+        "content";
+    }
+
+    .section-title {
+        grid-area: header;
+        align-self: flex-end;
+    }
+
+    .section-img {
+        grid-area: img;
+        img {
+            width: 65%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .section-content {
+        grid-area: content;
+    }
+}
