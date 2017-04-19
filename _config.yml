@@ -18,7 +18,7 @@ title: Sebastian Valdivia
 # Use > for multiline
 description: Software Developer in Vancouver
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sebastianvaldivia.com" # the base hostname & protocol for your site
+url: "http://sebastianvaldivia.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
