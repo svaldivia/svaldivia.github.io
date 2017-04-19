@@ -1,9 +1,8 @@
 //--------------------------
 // Typography Helper Class
 //--------------------------
-$header-font: "nimbus-sans", sans-serif;
-$paragraph-font: "calluna", serif;
-
+$header-font: 'Roboto', Helvetica,  sans-serif;;
+$paragraph-font: 'Merriweather', serif;
 
 h1, h2, h3, h4 { font-family: $header-font; }
 
@@ -20,7 +19,7 @@ h4 { font-size: 2rem; }
 
 @include mobile {
     h1 { font-size: 2.5rem; }
-    h2 { font-size: 1.7rem; }
+    h2 { font-size: 2rem; }
     h3 { font-size: 1rem; }
     h4 { font-size: 0.5rem; }
 }
@@ -33,7 +32,7 @@ h4 { font-size: 2rem; }
 }
 
 p {
-    padding-left: 1rem;
+    padding: 0 1rem;
     font-size: 1.3rem;
     font-family: $paragraph-font;
 
@@ -43,6 +42,11 @@ p {
     @include tablet {
         font-size: 1rem;
     }
+}
+
+.metatext {
+    font-size: 0.8rem;
+    color: $gray-1;
 }
 
 .emoji {

@@ -1,0 +1,19 @@
+.toggle-button {
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        color: $gray-1;
+    }
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+
+    &.is-visible {
+      max-height: 500px;
+      transition: max-height 0.5s ease-out;
+    }
+}

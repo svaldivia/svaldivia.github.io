@@ -1,6 +1,14 @@
 # Sebastian Valdivia's Website
 This my personal jekyll static site
 
+## What did I use?
+- Jekyll
+- CSS Grids
+- Vanilla JS
+
+## To do:
+- Grunt
+- Autoprefixer
+
 ## To run Server
-- `bundle exec jekyll serve`
-- **dev:**'bundle exec jekyll serve --config _config.yml,_config_dev.yml'
+- **dev:** 'bundle exec jekyll serve --config _config.yml,_config_dev.yml'

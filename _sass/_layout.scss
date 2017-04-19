@@ -2,19 +2,6 @@
 // GRID SETTINGS
 //------------------------------
 
-// $sv-base-grid: (
-//     gutter: 1rem,
-//     media: 1440px,
-// );
-
-.grid {
-    @include grid-container;
-}
-
-@for $i from 1 through 12 {
-  .col-#{$i} { @include grid-column($i); }
-}
-
 .full-height {
     height: 100%;
 }
@@ -24,6 +11,7 @@
     height: 100vh;
     background-image: url('/assets/images/personal_landing_background.jpg');
     background-attachment: fixed;
+    background-position: center;
 
     h2 { color: $gray-2; }
 
@@ -36,26 +24,31 @@
 // Box Model
 //------------------------------
 
-.mg {
-    margin: 1rem;
-
-    .mg-top {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-}
-
+.mg { margin: 1rem; }
 .mg-none { margin:0; }
-
-.pd {
-    margin: 1rem;
-
-    .pd-top {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
+.mg-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
-.pd-none { margin:0; }
+.pd { padding: 1rem; }
+.pd-none { padding:0; }
+.pd-horizontal {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pd-vertical {
+    padding-right: 0;
+    padding-left: 0;
+}
+.pd-top {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.pd-left {
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
