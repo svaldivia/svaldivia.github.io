@@ -25,7 +25,7 @@
 //------------------------------
 
 .mg { margin: 1rem; }
-.mg-none { margin:0; }
+.mg-none { margin: 0; }
 .mg-top {
     margin-left: 0;
     margin-right: 0;
@@ -33,7 +33,9 @@
 }
 
 .pd { padding: 1rem; }
+.pd-half { padding: 0.5rem; }
 .pd-none { padding:0; }
+
 .pd-horizontal {
     padding-top: 0;
     padding-bottom: 0;
